@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#080607">
+  <meta name="description" content="Eylül için sevgiyle hazırlanmış sinematik bir doğum günü hikâyesi.">
+  <meta property="og:title" content="Benim En Güzel Mevsimim Eylül">
+  <meta property="og:description" content="Eylül için sevgiyle hazırlanmış sinematik bir doğum günü hikâyesi.">
+  <meta property="og:image" content="assets/og.png">
+  <title>Benim En Güzel Mevsimim Eylül</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="locked">
+  <div class="film-grain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><i></i></div>
+
+  <section class="opening" id="opening" aria-label="Açılış">
+    <div class="orbit" aria-hidden="true"><i></i><i></i></div>
+    <div class="opening-copy">
+      <span class="monogram" data-name-initial>E</span>
+      <p><span data-name>Eylül</span>’e özel hazırlandı.</p>
+      <small>Kulaklığını tak ve yalnız olduğunda aç.</small>
+      <button class="gold-button" id="startButton" type="button">
+        <span>Hikâyemizi Başlat</span><i aria-hidden="true">↘</i>
+      </button>
+    </div>
+    <span class="opening-date" data-date>22 Temmuz 2026</span>
+  </section>
+
+  <div id="youtubePlayer" class="youtube-player" aria-hidden="true"></div>
+  <button class="music-control is-hidden" id="musicControl" type="button" aria-label="Müziği durdur">
+    <span class="equalizer" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span class="music-text"><small>şimdi çalıyor</small><b data-song-title>О моей любви</b></span>
+    <span class="music-state" aria-hidden="true">Ⅱ</span>
+  </button>
+
+  <main id="story" aria-hidden="true">
+    <section class="rose-section story-section" id="gul">
+      <button class="rose-button" type="button" aria-label="Sonraki bölüme geç">
+        <object type="image/svg+xml" data-src="assets/rose.svg" aria-label="Işıkla çizilen altın bir gül" class="rose-art"></object>
+        <span class="rose-aura" aria-hidden="true"></span>
+      </button>
+      <div class="rose-copy" data-rose-lines></div>
+      <a class="scroll-cue" href="#akrostis">Aşağı kaydır <span>↓</span></a>
+    </section>
+
+    <section class="acrostic-section" id="akrostis">
+      <header class="section-intro story-section">
+        <p class="eyebrow">ADININ İÇİNDE</p>
+        <h1>Beş harf.<br>Söyleyecek <em>çok şey.</em></h1>
+      </header>
+      <div data-acrostic></div>
+      <p class="acrostic-outro reveal">Adının her harfinde sana söylemek istediğim başka bir şey var.</p>
+    </section>
+
+    <section class="draw-section story-section" id="cizim">
+      <p class="eyebrow">SENİN İÇİN</p>
+      <div class="split-heading">
+        <h2>Senin için bir<br><em>çiçek çizmem</em><br>gerekiyordu.</h2>
+        <p>Parmağını ekranda gezdir.<br>Gerisini ışığa bırak.</p>
+      </div>
+      <div class="canvas-frame">
+        <canvas id="flowerCanvas" aria-label="Parmağınla ya da fareyle ışıklı bir çiçek çiz"></canvas>
+        <span>dokun ve çiz</span>
+      </div>
+      <div class="canvas-actions">
+        <button class="text-button" id="clearCanvas" type="button">Yeniden çiz</button>
+        <button class="gold-button small" id="completeCanvas" type="button">Tamamla</button>
+      </div>
+      <div class="draw-result" id="drawResult" hidden>
+        <p>Ne çizsem senin kadar güzel olmayacaktı.</p>
+        <span>Sen dokunduğunda en basit şeyler bile güzelleşiyor.</span>
+      </div>
+    </section>
+
+    <section class="interlude story-section" data-flirty-one></section>
+
+    <section class="facts-section story-section">
+      <p class="eyebrow">KAYITLARA GEÇSİN</p>
+      <h2>Bugün doğan kişi hakkında<br><em>bazı gerçekler</em></h2>
+      <div class="facts-grid" data-facts></div>
+    </section>
+
+    <section class="reasons-section story-section">
+      <p class="eyebrow">BAZI ŞEYLERİN AÇIKLAMASI YOK</p>
+      <div class="split-heading">
+        <h2>Seni Sevmemin<br><em>Küçük Sebepleri</em></h2>
+        <p>Bazıları küçük görünüyor.<br>Bende bıraktıkları his değil.</p>
+      </div>
+      <div class="reasons-list" data-reasons></div>
+    </section>
+
+    <section class="age-difference story-section">
+      <p class="eyebrow">TAKVİMİN KÜÇÜK BİR NOTU</p>
+      <div class="age-stage" aria-label="Aramızdaki dört yıl için romantik bir not">
+        <div class="age-visual" aria-hidden="true">
+          <div class="age-person age-person--me"><strong data-age-me>18</strong><span>BEN</span></div>
+          <div class="age-bridge">
+            <svg viewBox="0 0 240 74" role="presentation">
+              <path class="age-line" d="M8 37 H232"></path>
+              <path class="age-heart" pathLength="1" d="M120 60 C95 43 84 29 93 17 C102 5 116 12 120 23 C124 12 138 5 147 17 C156 29 145 43 120 60 Z"></path>
+            </svg>
+            <span data-age-gap>4 yıl</span>
+          </div>
+          <div class="age-person age-person--eylul"><strong data-age-eylul>22</strong><span>EYLÜL</span></div>
+        </div>
+        <div class="age-copy">
+          <p data-age-line-one>Takvim aramızda dört yıl olduğunu söylüyor.</p>
+          <p data-age-line-two>Ben ise seni bulmakta dört yıl geç kaldığımı düşünüyorum.</p>
+          <strong data-age-final>İyi ki benden önce geldin, Eylül.</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="prewish story-section">
+      <p class="eyebrow">ŞİMDİ</p>
+      <h2>Doğum günlerinin en güzel yanı,<br><em>yeni bir dilek için yer açmaları.</em></h2>
+      <a href="#dilek" class="round-link" aria-label="Dilek bölümüne geç">↓</a>
+    </section>
+
+    <section class="candle-section story-section" id="dilek">
+      <div class="candle-moment" id="candleMoment">
+        <p class="eyebrow">BİR DİLEK</p>
+        <h2>Şimdi bir dilek tut, <span data-name>Eylül</span>.</h2>
+        <p>Hazır olduğunda mumu söndür.</p>
+        <button class="candle" id="candle" type="button" aria-label="Mumu söndür">
+          <span class="flame"><i></i></span><span class="wick"></span><span class="wax"><i></i><i></i></span><small>dokun</small>
+        </button>
+      </div>
+      <div class="birthday-reveal" id="birthdayReveal" hidden>
+        <div class="particles" id="particles" aria-hidden="true"></div>
+        <span data-date>22 Temmuz 2026</span>
+        <h2>İyi ki doğdun,<br><em>benim güzel <span data-name>Eylül</span>’üm.</em></h2>
+        <p>Dileğinin ne olduğunu bilmiyorum.</p>
+        <p>Benim dileğim, kutlayacağımız daha çok doğum gününün olması.</p>
+      </div>
+    </section>
+
+    <section class="letter-section story-section">
+      <p class="eyebrow">SON BİR ŞEY</p>
+      <div class="envelope-scene" id="envelopeScene">
+        <button class="envelope" id="envelope" type="button" aria-label="Mektubu aç" aria-expanded="false">
+          <span class="envelope-back"></span><span class="letter-preview"><small data-name>Eylül</small><i>✦</i></span><span class="envelope-front"></span><span class="envelope-flap"></span><span class="seal" data-name-initial>E</span>
+        </button>
+        <p>Sana asıl söylemek istediğim şey</p>
+      </div>
+      <article class="letter-paper" id="letterPaper" hidden>
+        <span class="letter-date" data-date>22 Temmuz 2026</span>
+        <h2><span data-name>Eylül</span>,</h2>
+        <div data-letter></div>
+        <p class="signature">Daima seninim.</p>
+      </article>
+    </section>
+
+   
+  </main>
+
+  <script src="https://www.youtube.com/iframe_api" async></script>
+  <script src="script.js"></script>
+</body>
+</html>

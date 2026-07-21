@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="35 28 145 225" fill="none">
+  <style>
+    path{stroke-dasharray:1;stroke-dashoffset:1;animation:draw .8s ease-in-out forwards}
+    path:nth-child(2){animation-delay:.42s}path:nth-child(3){animation-delay:.84s}
+    path:nth-child(4){animation-delay:1.26s}path:nth-child(5){animation-delay:1.68s}
+    path:nth-child(6){animation-delay:2.1s}path:nth-child(7){animation-delay:2.52s}
+    @keyframes draw{to{stroke-dashoffset:0}}
+    @media(prefers-reduced-motion:reduce){path{animation:none;stroke-dashoffset:0}}
+  </style>
+  <g stroke="#d9ad62" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round">
+    <path pathLength="1" d="M100 238C102 190 98 144 112 102"/>
+    <path pathLength="1" d="M102 183C76 174 63 154 62 133C84 137 100 151 103 174"/>
+    <path pathLength="1" d="M104 158C132 151 150 132 153 108C130 111 112 126 104 148"/>
+    <path pathLength="1" d="M111 105C84 98 77 69 94 51C105 39 129 38 143 51C161 67 152 96 126 106C120 108 115 108 111 105Z"/>
+    <path pathLength="1" d="M104 91C85 76 94 52 113 48C134 43 151 62 142 80C136 92 122 98 108 95"/>
+    <path pathLength="1" d="M105 72C114 51 143 55 145 76C146 91 131 104 115 102"/>
+    <path pathLength="1" d="M105 72C98 85 104 99 117 103"/>
+  </g>
+</svg>
